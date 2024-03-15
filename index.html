@@ -76,7 +76,7 @@
              <img class="h-56 ml-32 text-[#FFFFFF]" src="images/info-devider.png" alt="">
             </div>
             <div class="font-raleway">
-             <p class="text-center mt-16 font-bold text-[32px] text-[#030712]">NEW15</p>
+             <p id="coupon-code-1" class="text-center mt-16 font-bold text-[32px] text-[#030712]">NEW15</p>
              <p class="text-center font-medium text-xl text-[#03071266]">Coupon Code</p>
             </div>
            </div>
@@ -92,7 +92,7 @@
              <img class="h-56 ml-32 text-[#FFFFFF]" src="images/info-devider.png" alt="">
             </div>
             <div class="font-raleway">
-             <p class="text-center pr-6 mt-16 font-bold text-[32px] text-[#030712]">Couple 20</p>
+             <p id="coupon-code-2" class="text-center pr-6 mt-16 font-bold text-[32px] text-[#030712]">Couple 20</p>
              <p class="text-center pr-6 font-medium text-xl text-[#03071266]">Coupon Code</p>
             </div>
            </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="flex justify-end gap-2">
               <p><img src="images/seat-green.png" alt=""></p>
-              <p><span id="available-seat">40</span> seats</p>
+              <p><span id="seat-left">40</span> seats</p>
             </div>
             
           </div>
@@ -204,32 +204,28 @@
         <p class="mb-2">Select Your Seat</p>
         <hr>
         <div class="flex justify-between mt-5 bg-[#F7F8F8] rounded-3xl  px-5 mb-5">
-          <p>Seat<sup>2</sup></p>
+          <p>Seat<sup id="selected-seat-number">0</sup></p>
           <p>Class</p>
           <p>Price</p>
         </div>
         <div class="flex justify-between bg-[#F7F8F8] rounded-3xl px-5 mb-5">
-          <p id="selected-seat">C2</p>
-          <p id="economy">Economy</p>
-          <p>550</p>
+          <p id="selected-seat"></p>
+          <p id="economy"></p>
+          <p></p>
         </div>
-        <div class="flex justify-between bg-[#F7F8F8] rounded-3xl px-5 mb-5">
-           <p>C2</p>
-          <p>Economy</p>
-          <p>550</p>
-        </div>
+       
         <div id="selected-seat-container" class="   px-5 mb-5"></div>
         <div class="flex justify-between bg-[#F7F8F8] rounded-3xl px-5 mb-5">
           <p>Total</p>
-          <p>1100</p>
+          <p id="total-cost">0</p>
         </div>
-        <div class=" bg-[#F7F8F8] rounded-3xl">
-          <input  class="h-14 w-80 text-center py-5 rounded-lg mb-5" type="text" name="" id="" placeholder="Have any coupon?">
-          <button class="btn h-10 w-20">Apply</button>
+        <div  class=" coupon-code bg-[#F7F8F8] rounded-3xl">
+           <input id="coupon-code" class="ml-10 pl-5" type="text" placeholder="Have any coupon?">
+          <button onclick="updateGrandTotal('apply-btn')" id="apply-btn" class="btn h-10 w-20">Apply</button>
         </div>
         <div class="flex justify-between  bg-[#F7F8F8] rounded-3xl mb-10 px-5 mt-5">
-          <p >Grand Total</p>
-        <p>1100</p>
+          <p>Grand Total</p>
+        <p id="grand-total">0</p>
       </div>
       <!-- ---------------- --------------------------->
       <div>
